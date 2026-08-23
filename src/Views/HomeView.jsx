@@ -1,6 +1,5 @@
 import React from "react";
 import { ProductsView } from "./ProductsView";
-import { ProductDetailView } from "./ProductDetailView";
 
 export const HomeView = () => {
     return (

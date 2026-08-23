@@ -16,16 +16,16 @@ export const Navbar = () => {
                                 <a href="/" className='nav-link text-decoration-none text-dark'>Inicio</a>
                             </li>
                             <li className="nav-item">
-                                <a href="/" className='nav-link text-decoration-none text-dark' >Calvin Klein</a>
+                                <a href="/CalvinKlein" className='nav-link text-decoration-none text-dark' >Calvin Klein</a>
                             </li>
                             <li className="nav-item">
-                                <a href="/" className='nav-link text-decoration-none text-dark' >Tommy Hilfiger</a>
+                                <a href="/TommyHilfiger" className='nav-link text-decoration-none text-dark' >Tommy Hilfiger</a>
                             </li>
                             <li className="nav-item">
-                                <a href="/" className='nav-link text-decoration-none text-dark' >Medias Tenis</a>
+                                <a href="/MediasTenis" className='nav-link text-decoration-none text-dark' >Medias Tenis</a>
                             </li>
                             <li className="nav-item">
-                                <a href="/" className='nav-link text-decoration-none text-dark' >Mayorista</a>
+                                <a href="/Mayorista" className='nav-link text-decoration-none text-dark' >Mayorista</a>
                             </li>
                         </ul>
                     </div>

@@ -1,13 +1,14 @@
-import { Navbar } from "./Components/navbar.jsx";
-import { Footer } from "./Components/footer.jsx";
-import { HomeView } from './Views/HomeView.jsx'
+import { Route, Routes } from "react-router-dom";
+import HomePage from "./Pages/HomePage.jsx";
+import ProductDetailPage from "./Pages/ProductDetailPage.jsx";
 
 function App() {
   return (
     <>
-      <Navbar/>
-      <HomeView/>
-      <Footer/>
+    <Routes>
+      <Route path="/" element={<HomePage/>}/>
+      <Route path="/prod/:id" element={<ProductDetailPage/>}/>
+    </Routes>
     </>
   );
 }
