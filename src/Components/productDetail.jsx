@@ -19,7 +19,7 @@ export const ProductDetail = ({product}) => {
                     <p>Marca: {product.marca}</p>
                     <p>
                         <button className="btn btn-dark rounded">
-                            <i class="bi bi-whatsapp"> Consultar Disponibilidad.</i>
+                            <i className="bi bi-whatsapp"> Consultar Disponibilidad.</i>
                         </button>
                     </p>
                 </div>

@@ -1,11 +1,12 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export const ProductCategories = () => {
     return (
     <>
-        <div className="container mt-2 pb-5">
-            <h1 className="text-center pb-2">Nuestros Catálogos</h1>
-            <div className="row justify-content-around">
+        <h1 className="text-center py-4">Nuestros Catálogos</h1>
+        <div className="container my-4">
+            <div className="row justify-content-around mx-5">
                 <div className="col-md-3 card-container">
                     <div className="card">
                         <img src="https://imgur.com/kkK95g0.jpg" alt="Productos Calvin Klein" className="rounded card-img-top" />
@@ -13,7 +14,7 @@ export const ProductCategories = () => {
                             <h5 className="card-title">Calvin Klein</h5>
                             <p className="card-text">Boxers Marca Calvin Klein.</p>
                             <p className='d-flex justify-content-center'>
-                                <a href="/" className="btn btn-dark ">Ver Catálogo</a>
+                                <Link to={"/products"} className="btn btn-dark ">Ver Catálogo</Link>
                             </p>
                         </div>
                     </div>
@@ -25,7 +26,7 @@ export const ProductCategories = () => {
                             <h5 className="card-title">Medias Tenis</h5>
                             <p className="card-text">Medias 3/4 tipo "Tenis".</p>
                             <p className='d-flex justify-content-center'>
-                                <a href="/" className="btn btn-dark ">Ver Catálogo</a>
+                                <Link to={'/products'} className="btn btn-dark ">Ver Catálogo</Link>
                             </p>
                         </div>
                     </div>
@@ -37,7 +38,7 @@ export const ProductCategories = () => {
                             <h5 className="card-title">Tommy Hilfiger</h5>
                             <p className="card-text">Boxers Marca Tommy Hilfiger.</p>
                             <p className='d-flex justify-content-center'>
-                                <a href="/" className="btn btn-dark ">Ver Catálogo</a>
+                                <Link to={'/products'} className="btn btn-dark ">Ver Catálogo</Link>
                             </p>
                         </div>
                     </div>
