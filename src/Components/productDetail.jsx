@@ -15,8 +15,9 @@ export const ProductDetail = ({product}) => {
                         <span className='text-danger'> ${product.price} ARS</span>
                     </p>
                     <p>Categoría/s: {product.category.join(", ")} </p>
-                    <p>Tipo: {product.type.join(',')}</p>
+                    <p>Tipo: {product.type.join(', ')}</p>
                     <p>Marca: {product.marca}</p>
+                    <p>Colores: {product.color.join(', ')}</p>
                     <p>
                         <button className="btn btn-dark rounded">
                             <i className="bi bi-whatsapp"> Consultar Disponibilidad.</i>

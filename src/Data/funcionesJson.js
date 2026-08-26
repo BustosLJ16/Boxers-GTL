@@ -1,12 +1,19 @@
-let productos = [];
+import { collection, getDocs } from "firebase/firestore";
+import { db } from "../Data/firebase.js";
 
-async function obtenerProductos() {
+export async function obtenerProductos() {
     try {
-        const response = await fetch('./data.json');
-        const data = await response.json();
-        productos= data;
-        return productos;
+        const productsCollection = collection(db, "products");
+        const response = await getDocs(productsCollection);
+
+        const products = response.docs.map((doc) => ({
+            id: doc.id,
+            ...doc.data()
+        }));
+
+        return products;
     } catch (error) {
-        console.error('Error al cargar los Productos:', error)
+        console.error('Error al cargar los Productos:', error);
+        return [];
     }
 }
